@@ -266,6 +266,7 @@
         _percentTokenOperator = OPERATOR(DDOperatorModulo, @[@"%"], BINARY, 0, LEFT);
         DDMathOperator *multiply = [self operatorForFunction:DDOperatorMultiply];
         [self addOperator:_percentTokenOperator withPrecedenceHigherThanOperator:multiply];
+		[self setInterpretsPercentSignAsModulo:NO];
     }
     return self;
 }

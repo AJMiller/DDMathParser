@@ -13,6 +13,7 @@
 @interface DDMathStringTokenizer : NSEnumerator
 
 @property (readonly) DDMathOperatorSet *operatorSet;
+@property (nonatomic, readonly) NSArray *tokens;
 
 - (instancetype)initWithString:(NSString *)expressionString operatorSet:(DDMathOperatorSet *)operatorSet error:(NSError **)error;
 

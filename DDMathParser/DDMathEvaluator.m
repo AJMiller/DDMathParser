@@ -87,7 +87,7 @@
 - (void)unregisterFunctionWithName:(NSString *)functionName {
     functionName = [functionName lowercaseString];
     [_functionMap removeObjectForKey:functionName];
-}
+}  
 
 - (NSArray *)registeredFunctions {
     NSMutableArray *array = [NSMutableArray array];
